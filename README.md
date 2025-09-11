@@ -1,4 +1,4 @@
-## 🏗️ Arquitectura del Proyecto
+##Arquitectura del Proyecto
 
 El sistema está diseñado siguiendo una arquitectura cliente-servidor con separación por capas para mejorar la escalabilidad y el mantenimiento.
 
@@ -56,5 +56,5 @@ Backend
 
  Base de Datos
 - Sequelize / Mongoose / TypeORM: ORM para manejar las consultas a la base de datos.  
-- MySQL2: librería para conexión directa con MySQL (si no usas ORM).  
+- MySQL2: librería para conexión directa con MySQL 
 
