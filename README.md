@@ -1,4 +1,4 @@
-##Arquitectura del Proyecto
+Arquitectura del Proyecto
 
 El sistema está diseñado siguiendo una arquitectura cliente-servidor con separación por capas para mejorar la escalabilidad y el mantenimiento.
 
