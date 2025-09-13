@@ -1,5 +1,6 @@
 ARQUITECTURA DEL PROYECTO
 
+
 FRONTEND 
   
   Desarrollado con React.js.
