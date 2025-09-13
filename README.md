@@ -1,60 +1,63 @@
-Arquitectura del Proyecto
+ARQUITECTURA DEL PROYECTO
+FRONTEND 
+  Desarrollado con React.js.
+  Se comunica con el backend a través de API REST.
+  Se encarga de mostrar:
+     Catálogo de productos.
+     Carrito de compras.
+     Procesamiento de pedidos.
+     Panel administrativo para gestionar productos, usuarios y ventas.
 
-El sistema está diseñado siguiendo una arquitectura cliente-servidor con separación por capas para mejorar la escalabilidad y el mantenimiento.
+BACKEND 
+  Implementado con Node.js + Express.js.
+  Expone endpoints REST para el frontend.
+    Se encarga de:
+      Autenticación y autorización (JWT).
+      Gestión de usuarios, productos, pedidos.
+      Validaciones de datos.
+      Conexión con la base de datos.
+      Integración con pasarela de pagos (Stripe / PayPal / MercadoPago).
 
-Frontend 
-- Desarrollado con **HTML, CSS y JavaScript**.
-- Funcionalidades:
-  - Interfaz gráfica para la gestión de productos deportivos.
-  - Catálogo de productos, carrito de compras y pasarela de pago.
-  - Formularios de registro, inicio de sesión y gestión de pedidos.
+BASE DE DATOS 
+  PostgreSQL 
+  Modelos principales:
+    Usuarios (clientes, administradores).
+    Productos (stock, precios, categorías).
+    Pedidos (estado, cliente, detalle).
+    Pagos (método, monto, estado).
 
- Backend 
-- Lenguaje: Python
-- Funcionalidades:
-  - Gestión de usuarios, productos, ventas y reportes.
-  - Exposición de API REST para comunicación con el frontend.
-  - Manejo de autenticación y autorización de usuarios.
+LIBRERIAS UTILIZADAS
 
-Base de Datos
-- Motor: MySQL 
-- Funcionalidades:
-  - Almacenamiento de usuarios, inventario de implementos deportivos, ventas y facturación.
-  - Relaciones entre tablas para clientes, productos y pedidos.
+ FRONTEND (React)
+    React Router DOM → navegación entre páginas.
+    Axios → consumo de la API.
+    TailwindCSS → diseño responsivo y moderno.
+    React Icons → íconos rápidos.
+    React Hook Form / Formik → validación de formularios.
+ BACKEND (Node.js + Express)
+    Express.js → framework principal del servidor.
+    Sequelize / Prisma → ORM para interactuar con PostgreSQL.
+    JWT (jsonwebtoken) → autenticación segura.
+    bcryptjs → encriptación de contraseñas.
+    Multer → subida de imágenes de productos.
+    Cors → manejo de políticas de acceso.
+    Dotenv → variables de entorno (configuración segura).
 
+TECNOLOGIAS UTILIZADAS
+ FRONTEND
+   React.js
+   HTML5, CSS3, JavaScript (ES6+)
+   TailwindCSS / Bootstrap
 
-Flujo General
-El usuario interactúa con el frontend.
-El frontend envía solicitudes al **backend (API REST)**.
-El backend procesa la lógica y consulta la **base de datos**.
-El resultado es devuelto al frontend para mostrarlo al usuario.
+ BACKEND
+   Node.js
+   Express.js
 
-Tecnologías Utilizadas
-
-- Frontend: HTML5, CSS3, JavaScript, React.js  
-- Backend: Node.js, Express.js  
-- Base de Datos: MySQL  
-- Control de versiones: Git y GitHub  
-- Entorno de desarrollo: Visual Studio Code
-
-
-
-Librerías Utilizadas
-
-Frontend
-- Axios: para realizar peticiones HTTP al backend.  
-- React Router DOM: navegación entre páginas.  
-- Bootstrap / Tailwind CSS: estilos y diseño responsivo.  
-
-Backend
-- Express: framework para la creación de APIs REST.  
-- Cors: permitir comunicación entre frontend y backend.  
-- Dotenv: manejo de variables de entorno.  
-- Bcrypt.js: encriptación de contraseñas.  
-- JSON Web Token (JWT): autenticación y autorización de usuarios.  
-- Multer: manejo de subida de archivos (ej. imágenes de productos).  
-
- Base de Datos
-- Sequelize / Mongoose / TypeORM: ORM para manejar las consultas a la base de datos.  
-- MySQL2: librería para conexión directa con MySQL 
-
+ BASE DE DATOS
+   PostgreSQL 
+ 
+ OTROS
+   Git + GitHub (control de versiones).
+   Vercel (despliegue frontend).
+   Render / AWS (despliegue backend).
+   Stripe / PayPal / MercadoPago (pagos).
