@@ -1,21 +1,37 @@
 ARQUITECTURA DEL PROYECTO
+
 FRONTEND 
+  
   Desarrollado con React.js.
+ 
   Se comunica con el backend a través de API REST.
+  
   Se encarga de mostrar:
+     
      Catálogo de productos.
+     
      Carrito de compras.
+     
      Procesamiento de pedidos.
+     
      Panel administrativo para gestionar productos, usuarios y ventas.
 
 BACKEND 
+  
   Implementado con Node.js + Express.js.
+  
   Expone endpoints REST para el frontend.
+    
     Se encarga de:
+      
       Autenticación y autorización (JWT).
+     
       Gestión de usuarios, productos, pedidos.
+     
       Validaciones de datos.
+     
       Conexión con la base de datos.
+      
       Integración con pasarela de pagos (Stripe / PayPal / MercadoPago).
 
 BASE DE DATOS 
