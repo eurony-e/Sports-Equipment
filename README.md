@@ -84,6 +84,7 @@ LIBRERIAS UTILIZADAS
 
 TECNOLOGIAS UTILIZADAS
 
+
  FRONTEND
  
    React.js
@@ -91,6 +92,7 @@ TECNOLOGIAS UTILIZADAS
    HTML5, CSS3, JavaScript (ES6+)
    
    TailwindCSS / Bootstrap
+
    
 
  BACKEND
@@ -103,6 +105,7 @@ TECNOLOGIAS UTILIZADAS
  BASE DE DATOS
  
    PostgreSQL 
+
    
  
  OTROS
