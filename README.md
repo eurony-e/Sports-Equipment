@@ -5,11 +5,8 @@ FRONTEND
   Desarrollado con React.js.
  
   Se comunica con el backend a través de API REST.
-  
-  Se encarga de mostrar:
-     
+    Se encarga de mostrar: 
      Catálogo de productos.
-     
      Carrito de compras.
      
      Procesamiento de pedidos.
